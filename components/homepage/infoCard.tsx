@@ -14,12 +14,12 @@ const InfoCard = () => {
         >
           <img src="/Neil.jpg" className="h-full rounded-xl w-fit" alt="" />
         </a>
-        <div className="m-8 text-gray-700 text-justify col-span-5 lg:col-span-3 flex flex-col gap-8">
+        <div className="m-8 text-gray-700 text-justify col-span-5 lg:col-span-3 text-xl flex flex-col gap-8">
           <p>
-            Hi, I’m Neil Fernandes I’m a certified life coach with a strong
-            academic foundation in personal development and human behavior, but
-            my work is equally shaped by the lessons life has taught me
-            first-hand. The challenges I’ve faced—and the growth they
+            Hi, I’m <b>Neil Fernandes</b> I’m a certified life coach with a
+            strong academic foundation in personal development and human
+            behavior, but my work is equally shaped by the lessons life has
+            taught me first-hand. The challenges I’ve faced—and the growth they
             demanded—have given me a deep understanding of what real change
             looks and feels like. This blend of knowledge and lived experience
             allows me to support others with both expertise and genuine empathy.
