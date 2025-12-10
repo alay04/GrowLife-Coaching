@@ -14,7 +14,7 @@ const InfoCard = () => {
         >
           <img src="/Neil.jpg" className="h-full rounded-xl w-fit" alt="" />
         </a>
-        <div className="m-8 text-gray-700 text-justify col-span-5 lg:col-span-3 text-xl flex flex-col gap-8">
+        <div className="m-4 lg:m-8 text-gray-700 text-justify col-span-5 lg:col-span-3 text-2xl flex flex-col gap-8">
           <p>
             Hi, I’m <b>Neil Fernandes</b> I’m a certified life coach with a
             strong academic foundation in personal development and human
