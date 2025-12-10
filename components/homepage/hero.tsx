@@ -1,37 +1,40 @@
+"use client";
+
 import Carousel from "../carousel";
+import Slide1 from "./slides/slide1";
+import Slide2 from "./slides/slide2";
+import Slide3 from "./slides/slide3";
+import Slide4 from "./slides/slide4";
+import Slide5 from "./slides/slide5";
+import Slide6 from "./slides/slide6";
 
 const Hero = () => {
-	return (
-		<div className="h-screen">
-			<Carousel
-				// tint="#24bf8020"
-				tint="rgba(28 46 24 / 0.23)"
-				delay={3000} // in milliseconds
-				images={[
-					"/home/00.jpg",
-					"/home/01.jpeg",
-					"/home/02.jpeg",
-					"/home/03.jpeg",
-				]}
-				overlays={[
-					<div className="">
-						<h2 className="text-white text-4xl font-bold">Content 1</h2>
-					</div>,
-					<div className="">
-						<h2 className="text-white text-4xl font-bold">Content 2</h2>
-					</div>,
-					<div className="">
-						<h2 className="text-white text-4xl font-bold">Content 3</h2>
-					</div>,
-					<div className="">
-						<h2 className="text-white text-4xl font-bold">Content 4</h2>
-					</div>,
-				]}
-				crops={["left", "center", "center", "left"]}
-			/>
-			<div className="flex"></div>
-		</div>
-	);
+  return (
+    <div className="h-screen">
+      <Carousel
+        tint="rgba(77, 15, 0, .4)"
+        delay={3000} // in milliseconds
+        images={[
+          "/home/home.jpg",
+          "/home/self-confidence.jpg",
+          "/home/transition.jpg",
+          "/home/career-direction.jpg",
+          "/home/equality-diversity.jpg",
+          "/home/why-choose-us.jpg",
+        ]}
+        overlays={[
+          <Slide1 />,
+          <Slide2 />,
+          <Slide3 />,
+          <Slide4 />,
+          <Slide5 />,
+          <Slide6 />,
+        ]}
+        crops={["left", "center", "center", "left"]}
+      />
+      <div className="flex"></div>
+    </div>
+  );
 };
 
 export default Hero;

@@ -25,7 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({
   className,
   tint,
   autoScroll = true,
-  delay = 3000,
+  delay = 4000,
 }) => {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -114,7 +114,9 @@ const Carousel: React.FC<CarouselProps> = ({
                   animate-overlay-enter
                 "
                 style={{
-                  animation: "overlayFadeSlide .5s ease-out forwards",
+                  animation: "overlayFadeSlide 1s ease-out forwards",
+                  pointerEvents: "all",
+                  animationDelay: ".3s",
                 }}
               >
                 {overlays[i]}
