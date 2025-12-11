@@ -12,6 +12,7 @@ interface ScrollFadeProps {
 	ease?: string;
 	start?: string;
 	initialX?: number;
+	delay?: number;
 }
 
 /**
@@ -26,6 +27,7 @@ export function ScrollFade({
 	ease = "power2.out",
 	start = "top 80%",
 	initialX = 100,
+	delay = 0,
 }: ScrollFadeProps) {
 	const ref = useRef<HTMLDivElement>(null);
 
@@ -42,13 +44,14 @@ export function ScrollFade({
 			x: 0,
 			duration,
 			ease,
+			delay,
 			scrollTrigger: {
 				trigger: el,
 				start,
 				once: true,
 			},
 		});
-	}, [direction, duration, ease, initialX]);
+	}, [direction, duration, ease, initialX, delay]);
 
 	return (
 		<div style={{ opacity: 0 }} ref={ref}>
