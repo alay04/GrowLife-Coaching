@@ -1,13 +1,47 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useState } from "react";
 
 const Page = () => {
+	const [showPlayIcon, setShowPlayIcon] = useState(true);
+	const videoRef = useRef<HTMLVideoElement>(null);
+
+	function playVideo() {
+		setShowPlayIcon(false);
+		videoRef.current?.play();
+	}
+
+	function pauseVideo() {
+		setShowPlayIcon(true);
+		videoRef.current?.pause();
+	}
+
 	return (
 		<div className="overflow-x-hidden bg-amber-50 min-h-[60vh] text-gray-900 p-8">
-			<div className="mt-32"></div>
-			<div className="flex flex-col gap-16 text-justify">
+			<div className="mt-20"></div>
+			<h1 className="text-5xl text-[#f3b71f] mb-8 uppercase font-bold text-center">
+				About your coach
+			</h1>
+			<div className="flex flex-col gap-16 text-left lg:text-justify">
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-					<div className="col-span-1 shadow-md flex flex-col justify-center items-center">
-						IMAGE WILL APPEAR HERE
+					<div className="col-span-1 w-full h-fit relative">
+						{showPlayIcon && (
+							<div
+								onClick={playVideo}
+								className="absolute z-1 top-0 left-0 right-0 bottom-0 flex justify-center flex-col items-center text-2xl font-bold"
+							>
+								<div className="w-16 h-16 p-4 bg-[#090b0e4d] rounded-full">
+									<img src="/icons/play.svg" alt="play icon" />
+								</div>
+							</div>
+						)}
+						<video
+							ref={videoRef}
+							onEnded={() => setShowPlayIcon(true)}
+							onClick={pauseVideo}
+							src="/about/Neil_intro_1.mp4"
+							className="h-[70%] mx-auto"
+						></video>
 					</div>
 					<div className="col-span-1 lg:col-span-2 text-2xl">
 						<p>
@@ -25,8 +59,9 @@ const Page = () => {
 						</p>
 					</div>
 				</div>
+
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-					<div className="col-span-1 lg:col-span-2 text-2xl">
+					<div className="col-span-1 lg:col-span-2 text-2xl lg:order-1">
 						<p>
 							In my life, I have experienced profound challenges, lightbulb
 							moments and pivots. All which have shaped my approach to coaching,
@@ -42,12 +77,13 @@ const Page = () => {
 						</p>
 					</div>
 					<div className="col-span-1 shadow-md flex flex-col justify-center items-center">
-						IMAGE WILL APPEAR HERE
+						<img src="/about/002.jpg" alt="talking with client" />
 					</div>
 				</div>
+
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 					<div className="col-span-1 shadow-md flex flex-col justify-center items-center">
-						IMAGE WILL APPEAR HERE
+						<img src="/about/003.jpg" alt="solo" />
 					</div>
 					<div className="col-span-1 lg:col-span-2 text-2xl">
 						<p>
@@ -62,6 +98,7 @@ const Page = () => {
 						</p>
 					</div>
 				</div>
+
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 					<div className="col-span-1 lg:col-span-2 text-2xl">
 						<p>

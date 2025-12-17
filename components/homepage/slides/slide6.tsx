@@ -1,29 +1,29 @@
 import React from "react";
 
 const Slide6 = () => {
-  return (
-    <div className="flex items-center justify-center flex-col gap-8">
-      <h1 className="text-[#08f345] text-3xl lg:text-6xl text-center font-bold">
-        WHY CHOOSE US?
-      </h1>
-      <ul className="flex flex-col font-semibold gap-2 text-xl lg:text-2xl text-center">
-        <li>
-          Tailored plans & goals for individuals, groups and organisations
-        </li>
-        <li> Prooven Strategies</li>
-        <li> Guidance from lived experiences</li>
-        <li> Empathy & Understanding</li>
-        <li> Inspirational & Action- orientated coaching.</li>
-        <li> Hollistic Approach</li>
-      </ul>
-      <button
-        onClick={() => alert()}
-        className="bg-[#f37608] shadow-lg mt-10 hover:scale-[103%] transition-all hover:bg-[#d86908] cursor-pointer text-white px-12 text-2xl py-4 rounded-full"
-      >
-        Book Your Free Session
-      </button>
-    </div>
-  );
+	return (
+		<div className="flex items-center justify-center flex-col gap-8">
+			<h1 className="text-[#08f345] text-3xl lg:text-6xl text-center font-bold">
+				WHY CHOOSE US?
+			</h1>
+			<ul className="flex text-white flex-col font-semibold gap-2 text-xl lg:text-2xl text-center">
+				<li>
+					Tailored plans & goals for individuals, groups and organisations
+				</li>
+				<li> Prooven Strategies</li>
+				<li> Guidance from lived experiences</li>
+				<li> Empathy & Understanding</li>
+				<li> Inspirational & Action- orientated coaching.</li>
+				<li> Hollistic Approach</li>
+			</ul>
+			<button
+				onClick={() => alert()}
+				className="bg-[#f37608] shadow-lg mt-10 hover:scale-[103%] transition-all hover:bg-[#d86908] cursor-pointer text-white px-12 text-2xl py-4 rounded-full"
+			>
+				Book Your Free Session
+			</button>
+		</div>
+	);
 };
 
 export default Slide6;
