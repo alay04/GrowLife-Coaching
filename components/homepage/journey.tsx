@@ -38,7 +38,10 @@ const journeyCards = [
 const Journey = () => {
 	return (
 		<div className="p-8 flex flex-col gap-8 text-gray-700 overflow-y-none">
-			<h2 className="text-4xl lg:text-5xl text-[#f9ca56] uppercase text-center font-bold">
+			<h2
+				id="journey"
+				className="text-4xl lg:text-5xl text-[#f9ca56] uppercase text-center font-bold"
+			>
 				Where are you on your journey?
 			</h2>
 			<div className="grid lg:grid-cols-2 gap-12 mx-auto">
