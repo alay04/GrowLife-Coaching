@@ -61,7 +61,7 @@ const Page = () => {
 				</div>
 
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-					<div className="col-span-1 lg:col-span-2 text-2xl lg:order-1">
+					<div className="col-span-1 lg:col-span-2 text-2xl order-1 lg:order-first">
 						<p>
 							In my life, I have experienced profound challenges, lightbulb
 							moments and pivots. All which have shaped my approach to coaching,
@@ -110,7 +110,7 @@ const Page = () => {
 						</p>
 					</div>
 					<div className="col-span-1 shadow-md flex flex-col justify-center items-center">
-						IMAGE WILL APPEAR HERE
+						<img src="/about/004.jpeg" alt="quote" />
 					</div>
 				</div>
 			</div>

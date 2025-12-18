@@ -96,7 +96,7 @@ export default function RootLayout({
 						},
 						{
 							title: "FAQ's",
-							url: "/",
+							url: "/faq",
 						},
 						{
 							title: "Contact",
