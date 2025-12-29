@@ -64,7 +64,7 @@ const Page = () => {
 			</p>
 			<div className="flex flex-col justify-center mt-8 items-center gap-4">
 				<p className="text-3xl font-bold flex flex-col lg:flex-row gap-2 items-center">
-					<span className="uppercase">PRICE: £40</span>
+					<span className="uppercase">£40</span>
 					<span className="text-xl">(Including Evaluation Report)</span>
 				</p>
 				<button className="bg-green-600 text-lg lg:text-xl cursor-pointer hover:bg-green-700 active:bg-green-800 text-white py-4 px-12 rounded-full hover:shadow-lg shadow-green-300 active:translate-y-1 duration-300 transition-all hover:-translate-y-[1px] w-fit uppercase font-bold">

@@ -17,7 +17,7 @@ const journeyCards = [
 		title: "In Your 30’s",
 		id: "30s",
 		content:
-			"Thirty-somethings are juggling rising responsibilities, careers, relationships, family, finances—while quietly questioning if they’re where they “should” be by now. Many feel caught between stability and the urge for change, managing burnout, shifting priorities, and the pressure to redefine success. It’s a decade of transition, growth, and recalibration. I can help you find growth and direction.",
+			"Thirty-somethings are juggling rising responsibilities, careers, relationships, family, finances—while quietly questioning if they’re where they should be by now. Many feel caught between stability and the urge for change, managing burnout, shifting priorities, and the pressure to redefine success. It’s a decade of transition, growth, and recalibration. I can help you find growth and direction.",
 	},
 	{
 		src: "/journey/40s.jpeg",

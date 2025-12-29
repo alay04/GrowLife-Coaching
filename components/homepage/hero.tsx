@@ -9,32 +9,32 @@ import Slide5 from "./slides/slide5";
 import Slide6 from "./slides/slide6";
 
 const Hero = () => {
-  return (
-    <div className="h-screen">
-      <Carousel
-        tint="rgba(77, 15, 0, .4)"
-        delay={3000} // in milliseconds
-        images={[
-          "/home/home.jpg",
-          "/home/self-confidence.jpg",
-          "/home/transition.jpg",
-          "/home/career-direction.jpg",
-          "/home/equality-diversity.jpg",
-          "/home/why-choose-us.jpg",
-        ]}
-        overlays={[
-          <Slide1 />,
-          <Slide2 />,
-          <Slide3 />,
-          <Slide4 />,
-          <Slide5 />,
-          <Slide6 />,
-        ]}
-        crops={["left", "center", "center", "left"]}
-      />
-      <div className="flex"></div>
-    </div>
-  );
+	return (
+		<div className="h-screen">
+			<Carousel
+				tint="rgba(77, 15, 0, .4)"
+				delay={8000} // in milliseconds
+				images={[
+					"/home/home.jpg",
+					"/home/self-confidence.jpg",
+					"/home/transition.jpg",
+					"/home/career-direction.jpg",
+					"/home/equality-diversity.jpg",
+					"/home/why-choose-us.jpg",
+				]}
+				overlays={[
+					<Slide1 />,
+					<Slide2 />,
+					<Slide3 />,
+					<Slide4 />,
+					<Slide5 />,
+					<Slide6 />,
+				]}
+				crops={["left", "center", "center", "left"]}
+			/>
+			<div className="flex"></div>
+		</div>
+	);
 };
 
 export default Hero;

@@ -17,7 +17,7 @@ const Page = () => {
 				<img src="/6-session/002.jpeg" className="mx-auto lg:w-[50%]" alt="" />
 			</div>
 			<p className="lg:text-justify text-xl lg:text-2xl mb-4">
-				The 6 Session Coaching Plan is designed for those who are ready to move
+				The 6 Session coaching Plan is designed for those who are ready to move
 				beyond subtle change and commit to a meaningful, lasting transformation.
 				This is not about quick fixes. It’s about creating real shifts in how
 				you think, feel, and show up in your life.
@@ -54,7 +54,7 @@ const Page = () => {
 					accountability, and the space to explore and evolve at a sustainable
 					pace. If you’re ready to invest in yourself, commit to your growth,
 					and step into the next chapter of your life with clarity and
-					confidence, the 6 Session Coaching Plan offers the support and
+					confidence, the 6 Session coaching Plan offers the support and
 					structure to help you get there.
 				</p>
 				<p className="text-xl lg:text-2xl">
@@ -70,7 +70,7 @@ const Page = () => {
 				</p>
 				<p className="text-xl lg:text-2xl">
 					If you’re ready to take focused action, stay committed to your growth,
-					and achieve tangible results, the 6 Session Coaching Plan is for you.
+					and achieve tangible results, the 6 Session coaching Plan is for you.
 				</p>
 			</div>
 			<div className="my-4 flex flex-col gap-4">
@@ -96,7 +96,7 @@ const Page = () => {
 				</ul>
 			</div>
 			<div className="flex flex-col justify-center mt-8 items-center gap-4">
-				<p className="text-3xl font-bold uppercase">PRICE: £450</p>
+				<p className="text-3xl font-bold uppercase">£450</p>
 				<button className="bg-green-600 text-lg lg:text-xl cursor-pointer hover:bg-green-700 active:bg-green-800 text-white py-4 px-12 rounded-full hover:shadow-lg shadow-green-300 active:translate-y-1 duration-300 transition-all hover:-translate-y-[1px] w-fit uppercase font-bold">
 					Book Now
 				</button>
