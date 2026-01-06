@@ -10,11 +10,11 @@ const Slide6 = () => {
 				<li>
 					Tailored plans & goals for individuals, groups and organisations
 				</li>
-				<li> Prooven Strategies</li>
+				<li> Prooven strategies</li>
 				<li> Guidance from lived experiences</li>
-				<li> Empathy & Understanding</li>
-				<li> Inspirational & Action- orientated coaching.</li>
-				<li> Hollistic Approach</li>
+				<li> Empathy & understanding</li>
+				<li> Inspirational & Action-orientated coaching</li>
+				<li> Holistic approach</li>
 			</ul>
 			<button
 				onClick={() => alert()}

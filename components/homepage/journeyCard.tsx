@@ -44,6 +44,10 @@ const JourneyCard = ({ imageSrc, title, content, id }: PropTypes) => {
 		e.preventDefault();
 		e.stopPropagation();
 		console.log("Book Free Session");
+		window.open(
+			"https://cal.com/officer-nasty-d9p4ge/free-suitability-session",
+			"_blank"
+		);
 	}
 
 	return (

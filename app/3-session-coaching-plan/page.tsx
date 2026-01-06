@@ -10,7 +10,7 @@ const Page = () => {
 			<div className="text-center flex flex-col justify-center items-center gap-2 text-2xl lg:text-3xl mb-4 ">
 				<p>Do you need clarity regarding a specific issue? </p>
 				<p>Are you looking for an affordable coaching plan?</p>
-				<p>In 3 sessions we can help solve a particular concern.</p>
+				<p>In 3 sessions we can help solve a particular concern</p>
 			</div>
 			<div className="flex flex-col my-8 lg:flex-row justify-center items-center gap-8">
 				<img src="/3-session/001.jpeg" className="mx-auto lg:w-[50%]" alt="" />
@@ -80,10 +80,14 @@ const Page = () => {
 				</ul>
 			</div>
 			<div className="flex flex-col justify-center mt-8 items-center gap-4">
-				<p className="text-3xl font-bold uppercase">PRICE: £225</p>
-				<button className="bg-green-600 text-lg lg:text-xl cursor-pointer hover:bg-green-700 active:bg-green-800 text-white py-4 px-12 rounded-full hover:shadow-lg shadow-green-300 active:translate-y-1 duration-300 transition-all hover:-translate-y-[1px] w-fit uppercase font-bold">
+				<p className="text-3xl font-bold uppercase">£225</p>
+				<a
+					href="https://cal.com/officer-nasty-d9p4ge/3-session-coaching-plan"
+					target="_blank"
+					className="bg-green-600 text-lg lg:text-xl cursor-pointer hover:bg-green-700 active:bg-green-800 text-white py-4 px-12 rounded-full hover:shadow-lg shadow-green-300 active:translate-y-1 duration-300 transition-all hover:-translate-y-px w-fit uppercase font-bold"
+				>
 					Book Now
-				</button>
+				</a>
 			</div>
 		</div>
 	);

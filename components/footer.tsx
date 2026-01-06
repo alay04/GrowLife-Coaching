@@ -125,12 +125,12 @@ const Footer = () => {
 		<footer className="p-8 bg-[#04641d] text-white grid grid-cols-4 gap-8">
 			<div className="col-span-4 lg:col-span-1 text-xl flex flex-col gap-4">
 				<p className="text-center lg:text-left">
-					Grow Life Coaching, led by Neil Fernandes empowers, guides, provides
+					Grow Life Coaching, led by Neil Fernandes. Empowers, guides, provides
 					unique tools & strategies and delivers with an empathetic approach you
 					do.
 				</p>
 				<div className="flex flex-col gap-4">
-					<p className="text-2xl text-center lg:text-left">Follow Us:</p>
+					<p className="text-2xl text-center lg:text-left">Follow Us</p>
 					<div className="flex flex-row gap-4 justify-center lg:justify-start">
 						{socialLinks.map((link) => (
 							<a href={link.path} className="shake">
@@ -164,7 +164,7 @@ const Footer = () => {
 				))}
 			</div>
 			<div className="col-span-4 lg:col-span-1 lg:pl-4 text-2xl flex flex-col gap-4 items-center">
-				<p className="text-2xl font-black">Quick Links:</p>
+				<p className="text-2xl font-black">Quick Links</p>
 				{quickLinks.map((link) => (
 					<Link
 						key={link.title}
@@ -176,7 +176,7 @@ const Footer = () => {
 				))}
 			</div>
 			<div className="col-span-4 lg:pl-4 text-2xl flex flex-col gap-4 items-center">
-				<p className="text-2xl font-black">Contact Us:</p>
+				<p className="text-2xl font-black">Contact Us</p>
 				{contactLinks.map((link) => (
 					<Link
 						key={link.title}

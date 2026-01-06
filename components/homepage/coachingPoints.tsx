@@ -12,25 +12,29 @@ const coachingMethods = [
 
 const bulletPoints = [
 	<>
-		<b>Break free</b> from old patterns.
+		<b>Break free</b> from old patterns
 	</>,
 	<>
 		Gain <b>clarity</b> about what you truly want in your personal or
-		professional life.
+		professional life
 	</>,
 	<>
-		Build <b>confidence</b> you can feel.
+		Build <b>confidence</b> you can feel
 	</>,
 	<>
-		Create <b>meaningful goals</b>.
+		Create <b>meaningful goals</b>
 	</>,
 	<>
-		Develop <b>healthier values</b>.
+		Develop <b>healthier values</b>
 	</>,
-	<>Reconnect with yourself.</>,
-	<>Turn thoughts into transitions.</>,
 	<>
-		Live with <b>purpose and happiness</b>.
+		<b>Reconnect</b> with yourself
+	</>,
+	<>
+		Turn thoughts into <b>transitions</b>
+	</>,
+	<>
+		Live with <b>purpose and happiness</b>
 	</>,
 ];
 
@@ -41,7 +45,9 @@ const CoachingPoints = () => {
 				<h3 className="text-4xl font-bold uppercase text-[#05c137]">
 					Is My Coaching Strategy for You?
 				</h3>
-				<p className="text-xl">Yes, it is for you if you want to:</p>
+				<p className="text-3xl font-bold uppercase text-[#05c137]">
+					Yes, it is for you if you want to:
+				</p>
 				<ul className="flex flex-col gap-2 pl-8">
 					{bulletPoints.map((point, index) => (
 						<ScrollFade delay={index} start="top 92%" key={index}>
@@ -49,7 +55,7 @@ const CoachingPoints = () => {
 						</ScrollFade>
 					))}
 				</ul>
-				<h3 className="text-4xl font-bold uppercase text-[#05c137]">
+				<h3 className="text-3xl font-bold uppercase text-[#05c137]">
 					What You Can Expect
 				</h3>
 				<p className="text-xl">
@@ -58,7 +64,7 @@ const CoachingPoints = () => {
 					design a plan that supports long-term change, in a space that’s safe
 					and non-judgmental.
 				</p>
-				<h3 className="text-4xl font-bold uppercase text-[#05c137]">
+				<h3 className="text-3xl font-bold uppercase text-[#05c137]">
 					How Do I Coach?
 				</h3>
 				<ul className="flex flex-col gap-2 pl-8">
