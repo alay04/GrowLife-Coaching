@@ -81,9 +81,13 @@ const Page = () => {
 			</div>
 			<div className="flex flex-col justify-center mt-8 items-center gap-4">
 				<p className="text-3xl font-bold uppercase">£225</p>
-				<button className="bg-green-600 text-lg lg:text-xl cursor-pointer hover:bg-green-700 active:bg-green-800 text-white py-4 px-12 rounded-full hover:shadow-lg shadow-green-300 active:translate-y-1 duration-300 transition-all hover:-translate-y-[1px] w-fit uppercase font-bold">
+				<a
+					href="https://cal.com/officer-nasty-d9p4ge/3-session-coaching-plan"
+					target="_blank"
+					className="bg-green-600 text-lg lg:text-xl cursor-pointer hover:bg-green-700 active:bg-green-800 text-white py-4 px-12 rounded-full hover:shadow-lg shadow-green-300 active:translate-y-1 duration-300 transition-all hover:-translate-y-px w-fit uppercase font-bold"
+				>
 					Book Now
-				</button>
+				</a>
 			</div>
 		</div>
 	);
