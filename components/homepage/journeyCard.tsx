@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
+import { meetingLinks } from "@/data/meetingLinks";
 
 type PropTypes = {
   imageSrc: string;
@@ -44,10 +45,7 @@ const JourneyCard = ({ imageSrc, title, content, id }: PropTypes) => {
     e.preventDefault();
     e.stopPropagation();
     console.log("Book Free Session");
-    window.open(
-      "https://cal.com/officer-nasty-d9p4ge/free-suitability-session",
-      "_blank",
-    );
+    window.open(meetingLinks["free-suitability-session"], "_blank");
   }
 
   return (
