@@ -3,11 +3,10 @@ import { ScrollFade } from "../scrollReveal";
 
 const coachingMethods = [
 	<>
-		Using online platforms such as -{" "}
-		<b>Zoom, Microsoft Teams or Google Meet.</b>
+		Using online platforms such as - <b>Zoom, Microsoft Teams or Google Meet</b>
 	</>,
 	<>Telephone and/or Video Call</>,
-	<>In person. (Subject to location).</>,
+	<>In person (Subject to location)</>,
 ];
 
 const bulletPoints = [
