@@ -5,12 +5,10 @@
   --foreground: #171717;
 }
 
-.open-sans-300 {
+* {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
+
 
 @theme inline {
   --color-background: var(--background);

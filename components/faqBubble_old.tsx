@@ -37,14 +37,19 @@ const FaqBubble = (props: Props) => {
 		<div>
 			<p
 				onClick={toggleAnimation}
-				className="px-8 py-3 text-2xl cursor-pointer border-5 font-bold rounded-[50%] w-fit text-[#0c6423]"
+				className="px-8 py-3 text-2xl cursor-pointer border-5 font-bold rounded-2xl shadow-lg w-fit flex items-center gap-2 text-shadow-gray-800 border-white"
 			>
+				<img
+					src="/logo_cropped_tinted.png"
+					className="w-12 rounded-lg"
+					alt=""
+				/>
 				{props.question}
 			</p>
 			<div
 				style={{ transform: "translateY(-25vh)", opacity: 0, display: "none" }}
 				ref={answerRef}
-				className="py-12 px-28 text-2xl border-5 font-bold rounded-[50%] w-fit text-[#6e690d] max-w-[70%] ml-auto"
+				className="py-12 px-28 ml-6 border-white text-2xl border-5 font-bold rounded-4xl shadow-lg w-fit text-shadow-gray-800 max-w-[70%] mt-4"
 			>
 				{props.children}
 			</div>
