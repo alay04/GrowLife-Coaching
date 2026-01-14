@@ -15,13 +15,13 @@ const Page = () => {
 				</p>
 			</div>
 			<div className="grid grid-cols-2 p-4 gap-8">
-				<div className="flex flex-col gap-4 bg-white p-8 shadow-lg rounded-2xl">
+				<div className="flex flex-col gap-4 bg-white p-8 shadow-lg rounded-2xl col-span-2 lg:col-span-1">
 					<h2 className="text-xl lg:text-2xl font-bold text-gray-900">
 						Get In Touch
 					</h2>
 					<ContactForm />
 				</div>
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-4 col-span-2 lg:col-span-1">
 					<ConnectCard />
 					<ConsultationCard />
 				</div>
