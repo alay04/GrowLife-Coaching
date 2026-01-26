@@ -1,5 +1,8 @@
+"use client";
+
 import ConnectCard, { ConsultationCard } from "@/components/connectCard";
 import ContactForm from "@/components/contactForm";
+import { Suspense } from "react";
 
 const Page = () => {
   return (
@@ -19,7 +22,9 @@ const Page = () => {
           <h2 className="text-xl lg:text-2xl font-bold text-gray-900">
             Get In Touch
           </h2>
-          <ContactForm />
+          <Suspense fallback={<div>Loading...</div>}>
+            <ContactForm />
+          </Suspense>
         </div>
         <div className="flex flex-col gap-4 col-span-2 lg:col-span-1">
           <ConnectCard />
