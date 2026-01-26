@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import JourneyCard from "./journeyCard";
 import { ScrollFade } from "../scrollReveal";
 
