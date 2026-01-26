@@ -6,6 +6,9 @@ import { useEffect } from "react";
 const ContactForm = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const domain = location.hostname;
+  const redirectUrl = domain === "localhost" ? "localhost:3000" : domain;
+  const isHttp = domain === "localhost" ? true : false;
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -53,7 +56,7 @@ ${formData.get("message")}
       <input
         type="hidden"
         name="_redirect"
-        value="http://localhost:3000/contact?message=ok"
+        value={`${isHttp ? "http" : "https"}://${redirectUrl}/contact?message=ok`}
       />
       <label className="col-span-1 flex flex-col gap-2 text-gray-800">
         <span>First Name</span>

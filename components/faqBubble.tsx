@@ -55,7 +55,7 @@ const FaqBubble = ({
 				onClick={onToggle}
 				className={`${
 					isGreen ? "text-[#17fcaa]" : "text-[#e4ee2d]"
-				} text-2xl lg:text-3xl cursor-pointer flex flex-row justify-between items-center font-bold`}
+				} text-lg lg:text-3xl cursor-pointer flex flex-row justify-between items-center font-bold`}
 			>
 				<p>{question}</p>
 				{visible ? <FaCaretUp size={25} /> : <FaCaretDown size={25} />}
@@ -71,6 +71,7 @@ const FaqBubble = ({
 					opacity: visible ? 1 : 0,
 				}}
 			>
+				sdsdsd
 				<hr className="mb-2 mt-3 border-2" />
 				{children}
 			</div>

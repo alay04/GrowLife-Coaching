@@ -2,7 +2,7 @@ export const faqData = [
 	{
 		question: "What is life coaching?",
 		answer: (
-			<p className="text-2xl">
+			<p className="text-lg lg:text-2xl">
 				Life coaching is a collaborative, forward focused process that helps you
 				gain clarity, build confidence, overcome challenges, and achieve your
 				personal or professional goals. Coaching focuses on where you are now
@@ -13,7 +13,7 @@ export const faqData = [
 	{
 		question: "How do I know if life coaching is right for me?",
 		answer: (
-			<p className="text-2xl">
+			<p className="text-lg lg:text-2xl">
 				Coaching is a great fit if you are ready for change, feeling stuck,
 				wanting clarity, or looking for support to reach a goal. Especially
 				outside of your current circle. If you’re open to reflection and growth,
@@ -24,7 +24,7 @@ export const faqData = [
 	{
 		question: "What happens in the suitability session?",
 		answer: (
-			<div className="text-2xl">
+			<div className="text-lg lg:text-2xl">
 				<p>The suitability session is a relaxed conversation where we:</p>
 				<ul className="list-disc text-xl pl-8">
 					<li>Explore what you want to achieve</li>
@@ -39,7 +39,7 @@ export const faqData = [
 	{
 		question: "How long are coaching sessions?",
 		answer: (
-			<p className="text-2xl">
+			<p className="text-lg lg:text-2xl">
 				Most sessions last 60 minutes, depending on your chosen plan. This can
 				be adjusted based on your needs.
 			</p>
@@ -48,9 +48,9 @@ export const faqData = [
 	{
 		question: "Are sessions online or in person?",
 		answer: (
-			<div className="text-2xl">
+			<div className="text-lg lg:text-2xl">
 				<p>Coaching is available:</p>
-				<ul className="list-disc text-xl pl-8">
+				<ul className="list-disc text-sm lg:text-xl pl-8">
 					<li>Online via Microsoft Teams, Zoom or Google Meet</li>
 					<li>Via telephone and face time.</li>
 					<li>Answer any questions you may have</li>
@@ -65,7 +65,7 @@ export const faqData = [
 	{
 		question: "What is included in the 3 Session coaching program?",
 		answer: (
-			<div className="text-2xl">
+			<div className="text-lg lg:text-2xl">
 				<p>The 3 Session program includes:</p>
 
 				<ul className="list-disc text-xl pl-8">
@@ -81,7 +81,7 @@ export const faqData = [
 	{
 		question: "What’s included in the 6 Session coaching program?",
 		answer: (
-			<div className="text-2xl">
+			<div className="text-lg lg:text-2xl">
 				<p>The 6 Session program includes:</p>
 
 				<ul className="list-disc text-xl pl-8">
@@ -98,7 +98,7 @@ export const faqData = [
 	{
 		question: "Can I book single sessions instead of a package?",
 		answer: (
-			<p className="text-2xl">
+			<p className="text-lg lg:text-2xl">
 				Yes. Individual sessions are perfect if you want flexible, focused
 				support on a specific goal or challenge, without committing to a
 				multi-session plan.
@@ -108,7 +108,7 @@ export const faqData = [
 	{
 		question: "What is group coaching and how does it work?",
 		answer: (
-			<p className="text-2xl">
+			<p className="text-lg lg:text-2xl">
 				Group coaching brings together individuals with similar goals or
 				interests. Sessions typically include guided conversations, practical
 				activities, and shared learning. It’s interactive, supportive, and ideal
@@ -119,7 +119,7 @@ export const faqData = [
 	{
 		question: "Do you offer corporate or organisational workshops?",
 		answer: (
-			<div className="text-2xl">
+			<div className="text-lg lg:text-2xl">
 				<p>Yes, you can book:</p>
 
 				<ul className="list-disc text-xl pl-8">
@@ -138,7 +138,7 @@ export const faqData = [
 	{
 		question: "What is personality or strengths assessments?",
 		answer: (
-			<div className="text-2xl">
+			<div className="text-lg lg:text-2xl">
 				<p>
 					These assessments help you understand your natural strengths,
 					behaviours, communication style, and motivations. Each assessment
@@ -159,8 +159,8 @@ export const faqData = [
 	{
 		question: "Can I combine coaching with a personality assessment?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Absolutely. Many clients choose to begin their coaching program with
 					an assessment to gain deeper self-awareness from the start.
 				</p>
@@ -170,8 +170,8 @@ export const faqData = [
 	{
 		question: "How often will we meet?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Most clients meet weekly or bi-weekly, but we can adjust the frequency
 					based on your goals and schedule.
 				</p>
@@ -181,8 +181,8 @@ export const faqData = [
 	{
 		question: "How soon will I see results?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Many clients experience clarity or a shift even after the first
 					session. Sustainable change usually builds over time as you apply
 					tools, complete exercises, and stay consistent between sessions.
@@ -193,8 +193,8 @@ export const faqData = [
 	{
 		question: "Is everything I share confidential?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Yes. Coaching sessions are completely confidential. Your information,
 					experiences, and goals are always respected and protected.
 				</p>
@@ -204,8 +204,8 @@ export const faqData = [
 	{
 		question: "What if I’m not sure which service to choose?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Feel free to contact us to discuss and also that’s exactly what the
 					intro session is for. We will talk through your goals and recommend
 					the option that best supports you.
@@ -216,8 +216,8 @@ export const faqData = [
 	{
 		question: "What’s the difference between coaching and therapy?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Therapy often focuses on healing, emotional patterns, or past
 					experiences.
 					<br />
@@ -230,8 +230,8 @@ export const faqData = [
 	{
 		question: "How do I get started?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Simply book your suitability session. From there, we’ll map out a plan
 					that feels aligned, achievable, and supportive.
 				</p>
@@ -241,8 +241,8 @@ export const faqData = [
 	{
 		question: "When and how do I pay? Are there cancellation fees?",
 		answer: (
-			<div className="text-2xl">
-				<p className="text-2xl">
+			<div className="text-lg lg:text-2xl">
+				<p>
 					Payment is taken before your first session, depending on the service
 					you choose. You can pay securely online via card, bank transfer, or
 					any payment method offered at checkout.
