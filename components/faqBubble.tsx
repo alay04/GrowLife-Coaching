@@ -1,82 +1,54 @@
-import gsap from "gsap";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
 type Props = {
 	question: React.ReactNode | string;
 	children?: React.ReactNode | string;
-	visible: boolean;
 	color?: "green" | "orange";
-	onToggle?: () => void;
 };
 
-const FaqBubble = ({
+const FaqDropdown = ({
 	question,
 	children,
-	visible,
-	onToggle,
 	color = "green",
 }: Props) => {
-	const answerRef = useRef<HTMLDivElement>(null);
-
-	useEffect(() => {
-		if (!answerRef.current) return;
-
-		if (visible) {
-			gsap.fromTo(
-				answerRef.current,
-				{ height: 0, opacity: 0 },
-				{
-					height: "auto",
-					opacity: 1,
-					duration: 0.4,
-					ease: "power2.out",
-				}
-			);
-		} else {
-			gsap.to(answerRef.current, {
-				height: 0,
-				opacity: 0,
-				duration: 0.3,
-				ease: "power2.in",
-			});
-		}
-	}, [visible]);
+	const [open, setOpen] = useState(false);
+	const contentRef = useRef<HTMLDivElement>(null);
 
 	const isGreen = color === "green";
 
 	return (
 		<div
-			className={`p-4 rounded-lg border-4 ${
+			className={`rounded-lg border-4 p-4 ${
 				isGreen ? "border-[#17fcaa]" : "border-[#e4ee2d]"
 			}`}
 		>
-			<div
-				onClick={onToggle}
-				className={`${
-					isGreen ? "text-[#17fcaa]" : "text-[#e4ee2d]"
-				} text-lg lg:text-3xl cursor-pointer flex flex-row justify-between items-center font-bold`}
+			{/* Header */}
+			<button
+				onClick={() => setOpen(!open)}
+				className={`w-full flex justify-between items-center font-bold text-left
+				${isGreen ? "text-[#17fcaa]" : "text-[#e4ee2d]"}
+				text-lg lg:text-3xl`}
 			>
-				<p>{question}</p>
-				{visible ? <FaCaretUp size={25} /> : <FaCaretDown size={25} />}
-			</div>
+				<span>{question}</span>
+				{open ? <FaCaretUp size={24} /> : <FaCaretDown size={24} />}
+			</button>
 
+			{/* Content */}
 			<div
-				ref={answerRef}
-				className={`overflow-hidden ${
-					isGreen ? "text-[#17fcaa]" : "text-[#e4ee2d]"
-				}`}
+				ref={contentRef}
+				className={`overflow-hidden transition-all duration-300 ease-in-out
+				${isGreen ? "text-[#17fcaa]" : "text-[#e4ee2d]"}`}
 				style={{
-					height: visible ? "auto" : 0,
-					opacity: visible ? 1 : 0,
+					maxHeight: open ? contentRef.current?.scrollHeight : 0,
+					opacity: open ? 1 : 0,
 				}}
 			>
-				sdsdsd
-				<hr className="mb-2 mt-3 border-2" />
-				{children}
+				<hr className="my-3 border-2" />
+				<div className="text-base lg:text-lg">{children}</div>
 			</div>
 		</div>
 	);
 };
 
-export default FaqBubble;
+export default FaqDropdown;

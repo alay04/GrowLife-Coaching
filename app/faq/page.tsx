@@ -1,6 +1,6 @@
 "use client";
 
-import FaqBubble from "@/components/faqBubble_old";
+import FaqItem from "@/components/faqBubble_old";
 import { faqData } from "@/data/faq";
 import { useState } from "react";
 
@@ -18,19 +18,19 @@ const Page = () => {
 		<div className="overflow-x-hidden bg-amber-50 min-h-[90vh] text-gray-900 p-8">
 			<div className="mt-25"></div>
 			<div
-				className="relative overflow-y-auto lg:bg-[url('/faq/faq_new_1.jpeg')] w-full h-[min(720px, 70vh)] lg:h-[580px] bg-contain bg-no-repeat"
+				className="relative w-full bg-contain bg-no-repeat flex flex-col justify-center items-center"
 			>
-				<div className="z-10 flex flex-col gap-4 p-4 mr-10">
+				<h1 className="text-4xl text-yellow-400 text-center font-bold mb-8">Frequently Asked Questions</h1>
+				<div className="z-10 flex flex-col gap-4 p-4 mr-10 lg:w-[70%]">
 					{faqData.map((qna, i) => (
-						<FaqBubble
+						<FaqItem
 							key={i}
-							visible={i === currentlySelected}
 							onToggle={() => handleToggle(i)}
-							color={i & 1 ? "green" : "orange"}
+							open={i === currentlySelected}
 							question={qna.question}
 						>
 							{qna.answer}
-						</FaqBubble>
+						</FaqItem>
 					))}
 				</div>
 			</div>

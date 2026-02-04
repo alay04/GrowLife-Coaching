@@ -67,8 +67,8 @@ const GrowSupport = () => {
 								src="/grow-support-bg.png"
 								alt=""
 							/>
-							<p className="text-2xl font-bold uppercase">{point.title}</p>
-							<p className="text-2xl p-8">{point.description}</p>
+							<p className="text-xl lg:text-2xl font-bold uppercase">{point.title}</p>
+							<p className="text-lg lg:text-2xl p-8">{point.description}</p>
 						</div>
 					))}
 				</div>

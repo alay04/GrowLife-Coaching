@@ -2,11 +2,18 @@
 
 import { useRef, useState } from "react";
 
+type OverlayPosition = "top" | "center" | "bottom";
+
 interface VideoPlayerProps {
   src: string;
   className?: string;
   showControls?: boolean;
   videoHeight?: string;
+
+  /** Overlay content */
+  overlay?: React.ReactNode;
+  /** Overlay position */
+  overlayPosition?: OverlayPosition;
 }
 
 export default function VideoPlayer({
@@ -14,6 +21,8 @@ export default function VideoPlayer({
   className = "",
   showControls = false,
   videoHeight,
+  overlay,
+  overlayPosition = "center",
 }: VideoPlayerProps) {
   const [showPlayIcon, setShowPlayIcon] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -32,8 +41,24 @@ export default function VideoPlayer({
     }
   }
 
+  const overlayPositionClasses: Record<OverlayPosition, string> = {
+    top: "left-1/2 -translate-x-1/2",
+    center: "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
+    bottom: "bottom-4 left-1/2 -translate-x-1/2",
+  };
+
   return (
     <div className={`relative ${className}`}>
+      {/* Overlay text/content */}
+      {overlay && (
+        <div
+          className={`absolute z-20 ${overlayPositionClasses[overlayPosition]} pointer-events-none w-full`}
+        >
+          {overlay}
+        </div>
+      )}
+
+      {/* Play icon overlay */}
       {showPlayIcon && (
         <div
           onClick={playVideo}
@@ -45,6 +70,7 @@ export default function VideoPlayer({
           </div>
         </div>
       )}
+
       <video
         ref={videoRef}
         onEnded={() => setShowPlayIcon(true)}

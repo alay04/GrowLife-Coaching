@@ -1,60 +1,62 @@
 import gsap from "gsap";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 
 type Props = {
 	question: React.ReactNode | string;
 	children?: React.ReactNode | string;
-	visible?: boolean;
-	onToggle?: Function;
-	color?: string;
+	open: boolean;
+	onToggle: () => void;
 };
 
-const FaqBubble = (props: Props) => {
-	const answerRef = useRef<HTMLDivElement>(null);
+const FaqItem = ({ question, children, open, onToggle }: Props) => {
+	const contentRef = useRef<HTMLDivElement>(null);
+
 	useEffect(() => {
-		if (props.visible) {
-			gsap.to(answerRef.current, {
-				transform: "translateY(0)",
-				opacity: "100%",
-				display: "block",
+		if (!contentRef.current) return;
+
+		if (open) {
+			gsap.to(contentRef.current, {
+				height: "auto",
+				opacity: 1,
+				duration: 0.35,
+				ease: "power2.out",
 			});
 		} else {
-			gsap.to(answerRef.current, {
-				transform: "translateY(-25vh)",
-				opacity: "0",
-				onComplete: () => {
-					answerRef!.current!.style.display = "none";
-				},
+			gsap.to(contentRef.current, {
+				height: 0,
+				opacity: 0,
+				duration: 0.25,
+				ease: "power2.in",
 			});
 		}
-	}, [props.visible]);
-
-	function toggleAnimation() {
-		props.onToggle?.();
-	}
+	}, [open]);
 
 	return (
-		<div className="w-full">
-			<p
-				onClick={toggleAnimation}
-				className="px-8 py-3 text-lg lg:text-2xl cursor-pointer border-5 font-bold rounded-2xl shadow-lg w-fit flex items-center gap-2 text-shadow-gray-800 border-white"
+		<div className="border-b border-gray-200">
+			{/* Question Row */}
+			<button
+				onClick={onToggle}
+				className="w-full flex justify-between items-center py-6 text-left text-lg lg:text-xl font-medium"
 			>
-				<img
-					src="/logo_cropped_tinted.png"
-					className="w-12 rounded-lg"
-					alt=""
-				/>
-				{props.question}
-			</p>
+				<span>{question}</span>
+				<span className="text-2xl font-light">
+					{open ? <RxCaretUp /> : <RxCaretDown />}
+				</span>
+			</button>
+
+			{/* Answer */}
 			<div
-				style={{ transform: "translateY(-25vh)", opacity: 0, display: "none" }}
-				ref={answerRef}
-				className="p-4 lg:py-12 lg:px-28 ml-6 border-white text-2xl border-5 font-bold rounded-4xl shadow-lg text-shadow-gray-800 w-[85%] lg:max-w-[70%] mt-4"
+				ref={contentRef}
+				className="overflow-hidden"
+				style={{ height: 0, opacity: 0 }}
 			>
-				{props.children}
+				<div className="pb-6 text-gray-600 text-base lg:text-lg">
+					{children}
+				</div>
 			</div>
 		</div>
 	);
 };
 
-export default FaqBubble;
+export default FaqItem;

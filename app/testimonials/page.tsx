@@ -121,7 +121,13 @@ const Page = () => {
           />
         ))}
         <div className="col-span-1 w-full h-fit">
-          <VideoPlayer src="/testimonials/video-1.mp4" videoHeight="550px" />
+          <div className="pb-4 w-full rounded-md text-[#08b434] font-bold text-lg text-center">
+            <p>Video Testimonial of Alexander</p>
+          </div>
+          <VideoPlayer
+            src="/testimonials/video-1.mp4"
+            videoHeight="520px"
+          />
         </div>
       </div>
     </div>

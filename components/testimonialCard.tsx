@@ -9,7 +9,7 @@ type Props = {
 
 const TestimonialCard = ({ name, testimonial, img }: Props) => {
   return (
-    <div className="bg-gray-100 shadow-md rounded-lg p-4">
+    <div className="bg-neutral-50 shadow-md rounded-lg p-4">
       <img
         className="w-32 -translate-y-12 mx-auto rounded-full border-12 border-amber-50"
         src={img}

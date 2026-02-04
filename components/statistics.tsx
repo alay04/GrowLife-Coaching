@@ -9,7 +9,7 @@ const data = [
   {
     icon: <img width={55} height={55} src="/icons/badge.png" alt="" />,
     title: "10+",
-    subtitle: "Years experience",
+    subtitle: "Years Experience",
   },
   {
     icon: <img width={55} height={55} src="/icons/handshake.png" alt="" />,

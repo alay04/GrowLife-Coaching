@@ -15,11 +15,13 @@ const Page = () => {
 				<p>Have you lost someone you love?</p>
 			</div>
 			<div className="grid grid-cols-4 mt-12 gap-8">
-				<div className="flex flex-col justify-around items-center gap-8 col-span-5 lg:col-span-2 order-2 lg:order-1">
+				<div className="flex-col justify-around items-center gap-8 col-span-5 lg:col-span-2 order-2 lg:order-1 hidden lg:flex">
 					<img src="/6-session/001.jpeg" className="mx-auto" alt="" />
+					<img src="/6-session/003.jpeg" className="mx-auto" alt="" />
 					<img src="/6-session/002.jpeg" className="mx-auto" alt="" />
 				</div>
 				<div className="col-span-5 lg:col-span-2 order-1 lg:order-2">
+					<img src="/6-session/001.jpeg" className="mx-auto block lg:hidden" alt="" />
 					<p className="lg:text-justify text-xl lg:text-2xl mb-4">
 						The 6 Session Coaching Plan is designed for those who are ready to
 						move beyond subtle change and commit to a meaningful, lasting
@@ -30,6 +32,7 @@ const Page = () => {
 						<h2 className="text-3xl lg:text-4xl font-bold text-center">
 							Aims & Objectives
 						</h2>
+						<img src="/6-session/003.jpeg" className="mx-auto lg:hidden" alt="" />
 						<ul className="list-disc text-xl lg:text-2xl px-2">
 							<li>Build self awareness and establish clear direction</li>
 							<li>
@@ -86,6 +89,7 @@ const Page = () => {
 						<h3 className="text-3xl lg:text-4xl font-bold text-center">
 							Learning Outcomes
 						</h3>
+						<img src="/6-session/002.jpeg" className="mx-auto block lg:hidden" alt="" />
 						<ul className="list-disc text-xl lg:text-2xl px-2">
 							<li>
 								You will be able to demonstrate increased self-awareness by
