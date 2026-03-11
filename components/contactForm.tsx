@@ -49,7 +49,8 @@ ${formData.get("message")}
     <form
       id="contact-form"
       method="POST"
-      action={"https://submit-form.com/Ow5Aisyqg"}
+      // CHANGE THE LINK
+      action={"https://submit-form.com/SCdsV08U9"}
       className="grid grid-cols-2 gap-4"
       //   onSubmit={handleSubmit}
     >
