@@ -1,6 +1,7 @@
-import React from "react";
+import { useRouter } from "next/navigation";
 
 const Slide2 = () => {
+  const nav = useRouter();
   return (
     <div className="flex items-center justify-center flex-col gap-8">
       <p className="text-white text-center text-2xl lg:text-4xl font-bold">
@@ -14,7 +15,7 @@ const Slide2 = () => {
         take postitive steps ’
       </p>
       <button
-        onClick={() => alert()}
+        onClick={() => nav.push("/free-suitability-session")}
         className="bg-[#f37608] shadow-lg mt-10 hover:scale-[103%] transition-all hover:bg-[#d86908] cursor-pointer text-white px-12 text-2xl py-4 rounded-full"
       >
         Find Out More
