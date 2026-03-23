@@ -2,7 +2,7 @@
 
 A professional life coaching website built to help individuals at different life stages — from young people navigating early adulthood to those in mid-life and retirement seeking clarity and purpose. The platform offers personalized coaching sessions, personality and strength assessments, and a seamless booking experience.
 
-Live Demo: https://growlife-coaching.vercel.app
+Live Demo: www.growlifecoaching.co.uk
 
 ---
 
