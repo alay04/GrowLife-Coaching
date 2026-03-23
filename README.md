@@ -250,10 +250,10 @@ Upload the contents of the `out/` directory to any static hosting provider (Netl
 
 ## Credits
 
-**Senior Developer:** Alay Mistry
-**Developer:** Prajwal Aradhya
-**GitHub:** https://github.com/alay04  
-**Coach:** Certified Life Coach with academic foundation in personal development and human behavior
+#### **Senior Developer:** Alay Mistry
+#### **Developer:** Prajwal Aradhya
+#### **GitHub:** https://github.com/alay04  
+#### **Coach:** Certified Life Coach with academic foundation in personal development and human behavior
 
 ---
 
